@@ -21,7 +21,7 @@ namespace ProductDemo
             Products product3 = new Products();
 
             product3.productType = "Headphone";
-            product3.productName = "QYC Headphone";
+            product3.productName = "JBL Headphone";
             product3.productStock = 9999;
 
             Products[] products = new Products[] { product1, product2, product3 };
@@ -29,7 +29,6 @@ namespace ProductDemo
             Console.WriteLine(product1.productType + " >> " + product1.productName + " > " + product1.productStock);
 
             for (int i = 0; i < products.Length; i++)
-
 
             {
                 Console.WriteLine("Ürün Çeşidi:" + products[i].productType);
@@ -39,8 +38,6 @@ namespace ProductDemo
             }
 
             foreach (var product in products)
-
-
 
             {
                 Console.WriteLine("Ürün Çeşidi:" + product.productType);
@@ -52,14 +49,11 @@ namespace ProductDemo
             while (whileLoop < products.Length)
 
             {
-                Console.WriteLine("Ürün adı: " + products[whileLoop].productType);
-                Console.WriteLine("Ürün Açıklaması: " + products[whileLoop].productName);
-                Console.WriteLine("Ürün Fiyatı: " + "$" + products[whileLoop].productStock);
+                Console.WriteLine("Ürün Çeşidi: " + products[whileLoop].productType);
+                Console.WriteLine("Ürün Adı: " + products[whileLoop].productName);
+                Console.WriteLine("Ürün Stoğu: "  + products[whileLoop].productStock);
                 whileLoop++;
-
-
             }
-
 
             Console.WriteLine("All products have listed with for, foreach and while loops.");
         }
